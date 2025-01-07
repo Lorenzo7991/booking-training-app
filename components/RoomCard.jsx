@@ -4,7 +4,7 @@ import { FaEye } from 'react-icons/fa';
 
 function RoomCard({ room }) {
     return (
-        <div className="card mx-auto max-w-sm rounded overflow-hidden shadow-lg m-4 flex flex-col h-full">
+        <div className="card mx-auto md:max-w rounded overflow-hidden shadow-lg m-4 flex flex-col h-full">
             <Image className="w-full" src={`/images/${room.image}`} alt={room.name} width={400} height={300} />
             <div className="main-card px-6 py-4 flex-grow">
                 <div className="font-bold text-xl mb-2">{room.name}</div>
