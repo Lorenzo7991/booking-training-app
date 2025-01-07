@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="flex items-center">
                         {/* Logo */}
                         <Link href='#'><Image src={logo} alt="Logo" priority={true} className="text-white max-w-20" /></Link>
-                        <h1 className="text-white font-bold text-lg ml-2">BK - Rooms</h1>
+                        <h1 className="text-white font-bold text-lg ml-2 hidden md:block">BK - Rooms</h1>
                         {/* Link di navigazione visibili desktop */}
                         <div className="ml-10 space-x-4 hidden sm:flex">
                             <Link href="#" className="text-xs text-gray-300 hover:text-white">Rooms</Link>

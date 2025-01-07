@@ -1,6 +1,6 @@
 # Next.js Training App
 
-Primo progetto con Next.js , che sto studiando perché richiesto in ambito lavorativo.
+Primo progetto con Next.js che, sto studiando perché richiesto in ambito lavorativo.
 
 ## Descrizione
 
