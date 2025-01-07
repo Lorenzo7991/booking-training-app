@@ -18,24 +18,11 @@ const Header = () => {
                         <h1 className="text-white font-bold text-lg ml-2 hidden md:block">BK - Rooms</h1>
                         {/* Link di navigazione visibili desktop */}
                         <div className="ml-10 space-x-4 hidden sm:flex">
-                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">
-                                Stanze
-                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden md:group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                    Prenota Stanze
-                                </div>
-                            </Link>
-                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">
-                                Prenotazioni
-                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden md:group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                    Gestisci Prenotazioni
-                                </div>
-                            </Link>
+                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">Stanze</Link>
+                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">Prenotazioni</Link>
                             <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
                                 <FaPlus className="text-gray-300" />
                                 Stanza
-                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden md:group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                    Aggiungi Stanza
-                                </div>
                             </Link>
                         </div>
                     </div>
@@ -44,29 +31,37 @@ const Header = () => {
                         <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
                             <FaSignInAlt className="text-gray-300" />
                             <span className="hidden lg:block">Accedi</span>
-                            <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                Accedi
+                            <div className=' xl:hidden'>
+                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
+                                    Accedi
+                                </div>
                             </div>
                         </Link>
                         <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
                             <FaUserCircle className="text-gray-300" />
                             <span className="hidden lg:block">Registrati</span>
-                            <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                Registrati
+                            <div className=' xl:hidden'>
+                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
+                                    Registrati
+                                </div>
                             </div>
                         </Link>
                         <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
                             <FaHome className="text-gray-300" />
                             <span className="hidden lg:block">Le Mie Stanze</span>
-                            <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                Stanze
+                            <div className=' xl:hidden'>
+                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
+                                    Stanze
+                                </div>
                             </div>
                         </Link>
                         <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
                             <FaSignOutAlt className="text-gray-300" />
                             <span className="hidden lg:block">Esci</span>
-                            <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
-                                Esci
+                            <div className=' xl:hidden'>
+                                <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 hidden group-hover:flex px-2 py-1 text-xs text-white bg-slate-700 rounded-md">
+                                    Esci
+                                </div>
                             </div>
                         </Link>
                     </div>
