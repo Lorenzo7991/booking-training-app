@@ -1,5 +1,8 @@
 import React from 'react'
-import { FaUserCircle } from 'react-icons/fa';
+import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logos/logo-no-bg.png";
+import { FaUserCircle, FaSignInAlt, FaSignOutAlt, FaHome, FaBars } from 'react-icons/fa';
 
 // Componente Header
 const Header = () => {
@@ -10,30 +13,42 @@ const Header = () => {
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex items-center">
                         {/* Logo */}
-                        <img src="@/assets/img/" alt="Logo" className="text-white font-bold text-xl" />
+                        <Link href='#'><Image src={logo} alt="Logo" priority={true} className="text-white max-w-20" /></Link>
+                        <h1 className="text-white font-bold text-lg ml-2">BK - Rooms</h1>
                         {/* Link di navigazione visibili desktop */}
                         <div className="ml-10 space-x-4 hidden sm:flex">
-                            <a href="#" className="text-xs text-gray-300 hover:text-white">Rooms</a>
-                            <a href="#" className="text-xs text-gray-300 hover:text-white">Booking</a>
-                            <a href="#" className="text-xs text-gray-300 hover:text-white">Add Room</a>
+                            <Link href="#" className="text-xs text-gray-300 hover:text-white">Rooms</Link>
+                            <Link href="#" className="text-xs text-gray-300 hover:text-white">Booking</Link>
+                            <Link href="#" className="text-xs text-gray-300 hover:text-white">Add Room</Link>
                         </div>
                     </div>
-                    {/* Link di autenticazione */}
+                    {/* Link di autenticazione con icone */}
                     <div className="space-x-4 flex items-center">
-                        <FaUserCircle className="text-gray-300 hover:text-white" size={24} />
-                        <a href="#" className="text-xs text-gray-300 hover:text-white">Login</a>
-                        <a href="#" className="text-xs text-gray-300 hover:text-white">Register</a>
-                        <a href="#" className="text-xs text-gray-300 hover:text-white">MyRooms</a>
-                        <a href="#" className="text-xs text-gray-300 hover:text-white">Sign Out</a>
+                        <Link href="#" className="text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <FaSignInAlt className="text-gray-300"/>
+                        Login
+                        </Link>
+                        <Link href="#" className="text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <FaUserCircle className="text-gray-300"/>
+                        Register
+                        </Link>
+                        <Link href="#" className="text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <FaHome className="text-gray-300"/>
+                        MyRooms
+                        </Link>
+                        <Link href="#" className="text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <FaSignOutAlt className="text-gray-300"/>
+                        Sign Out
+                        </Link>
                     </div>
                 </div>
             </nav>
             {/* Link di navigazione visibili mobile first */}
             <div className="sm:hidden bg-gray-800 p-4">
                 <div className="space-y-2">
-                    <a href="#" className="block text-xs text-gray-300 hover:text-white">Rooms</a>
-                    <a href="#" className="block text-xs text-gray-300 hover:text-white">Booking</a>
-                    <a href="#" className="block text-xs text-gray-300 hover:text-white">Add Room</a>
+                    <Link href="#" className="block text-xs text-gray-300 hover:text-white">Rooms</Link>
+                    <Link href="#" className="block text-xs text-gray-300 hover:text-white">Booking</Link>
+                    <Link href="#" className="block text-xs text-gray-300 hover:text-white">Add Room</Link>
                 </div>
             </div>
         </>
