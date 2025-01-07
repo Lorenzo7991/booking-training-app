@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function RoomCard({ room }) {
     const truncateDescription = (description) => {
-        return description.length > 70 ? description.substring(0, 70) + '...' : description;
+        return description.length > 50 ? description.substring(0, 50) + '...' : description;
     };
 
     return (
@@ -19,7 +19,7 @@ function RoomCard({ room }) {
                     <p className="text-gray-700 text-sm">{truncateDescription(room.description)}</p>
                 </div>
                 <div className='services-card bg-gray-800 px-6 py-2'>
-                <p className="text-white h-14">{room.amenities}</p>
+                <p className="text-white text-sm h-14">{room.amenities}</p>
                 </div>
                 <div className="pills-card px-6 pt-4 pb-2 flex-grow my-3">
                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{room.capacity} persone</span>
