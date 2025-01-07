@@ -72,7 +72,7 @@
     {
         "$id": "6",
         "user_id": "2",
-        "name": "Sala Riunioni di Lusso Esecutiva",
+        "name": "Sala Riunioni Luxury",
         "description": "Ideale per riunioni esecutive e discussioni di piccoli gruppi.",
         "square_meters": 46.5,
         "capacity": 8,
