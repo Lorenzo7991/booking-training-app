@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaEye } from 'react-icons/fa';
+import { FaEye, FaUser, FaClock } from 'react-icons/fa';
 import Link from 'next/link';
 
 function RoomCard({ room }) {
@@ -21,10 +21,10 @@ function RoomCard({ room }) {
                 <div className='services-card bg-gray-800 px-6 py-2'>
                 <p className="text-white text-sm h-14">{room.amenities}</p>
                 </div>
-                <div className="pills-card px-6 pt-4 pb-2 flex-grow my-3">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{room.capacity} persone</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{room.square_meters} metri</span>
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">€ {room.price_per_hour}/h</span>
+                <div className="pills-card px-6 pt-4 pb-2 flex items-center justify-center flex-grow my-3">
+                    <div className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 flex items-center gap-2">{room.capacity} <FaUser/></div>
+                    <div className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{room.square_meters} m²</div>
+                    <div className="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 flex items-center gap-2">€ {room.price_per_hour}/h <FaClock/></div>
                 </div>
                 <div className='availability bg-gray-200 px-6 py-2'>
                     <p className="text-gray-700 text-sm"><strong>Orari prenotazioni:</strong> {room.availability}</p>
