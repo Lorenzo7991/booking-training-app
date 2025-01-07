@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RoonPage = () => {
+const RoomPage = () => {
     return (
         <>
             RoomPage
@@ -8,4 +8,4 @@ const RoonPage = () => {
     )
 }
 
-export default RoonPage
+export default RoomPage
