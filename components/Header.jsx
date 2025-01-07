@@ -17,10 +17,10 @@ const Header = () => {
                         <Link href='#'><Image src={logo} alt="Logo" priority={true} className="text-white max-w-20" /></Link>
                         <h1 className="text-white font-bold text-lg ml-2 hidden md:block">BK - Rooms</h1>
                         {/* Link di navigazione visibili desktop */}
-                        <div className="ml-10 space-x-4 hidden sm:flex">
-                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">Stanze</Link>
-                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white">Prenotazioni</Link>
-                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <div className="ml-10 space-x-4 hidden sm:flex gap-5">
+                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white hover:scale-125">Stanze</Link>
+                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white hover:scale-125">Prenotazioni</Link>
+                            <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1 hover:scale-125">
                                 <FaPlus className="text-gray-300" />
                                 Stanza
                             </Link>
@@ -28,7 +28,7 @@ const Header = () => {
                     </div>
                     {/* Link di autenticazione con icone */}
                     <div className="space-x-4 flex items-center">
-                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1 hover:scale-125">
                             <FaSignInAlt className="text-gray-300" />
                             <span className="hidden lg:block">Accedi</span>
                             <div className=' xl:hidden'>
@@ -37,7 +37,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1 hover:scale-125">
                             <FaUserCircle className="text-gray-300" />
                             <span className="hidden lg:block">Registrati</span>
                             <div className=' xl:hidden'>
@@ -46,7 +46,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1 hover:scale-125">
                             <FaHome className="text-gray-300" />
                             <span className="hidden lg:block">Le Mie Stanze</span>
                             <div className=' xl:hidden'>
@@ -55,7 +55,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1">
+                        <Link href="#" className="relative group text-xs text-gray-300 hover:text-white flex items-center gap-1 hover:scale-125">
                             <FaSignOutAlt className="text-gray-300" />
                             <span className="hidden lg:block">Esci</span>
                             <div className=' xl:hidden'>
